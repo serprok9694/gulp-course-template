@@ -1,6 +1,6 @@
-# gulp-pug-scss-boilerplate
+# gulp-course-template
 
-1. Clone repo with `git clone https://github.com/DziyanaYarmoliuk/basic-gulp-configuration-project.git`
-2. Open project in your terminal with `cd basic-gulp-configuration-project`
+1. Clone repo with `git clone https://github.com/serprok9694/gulp-course-template.git`
+2. Open project in your terminal with `cd gulp-course-template`
 3. Install node modules `npm install`
 4. Run project `gulp`
