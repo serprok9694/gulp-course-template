@@ -1,7 +1,11 @@
 @import './fonts.scss';
 @import './constants.scss';
 @import './mixins.scss';
+@import './navbar.scss';
+@import './carousel.scss';
+@import './button.scss';
 
-body {
-  color: red;
+.home-section {
+  background-color: $cream;
+  padding: 50px 0 70px;
 }
