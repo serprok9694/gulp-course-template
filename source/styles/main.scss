@@ -1,7 +1,12 @@
-@import './fonts.scss';
-@import './constants.scss';
-@import './mixins.scss';
+@import "./fonts.scss";
+@import "./constants.scss";
+@import "./mixins.scss";
+@import "./button.scss";
 
-body {
-  color: red;
+// =================== Блоки ========================
+.home-section {
+  background-color: $cream;
+  padding: 50px 0 70px;
 }
+@import "./navbar.scss";
+@import "./carousel.scss";
