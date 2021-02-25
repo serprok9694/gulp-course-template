@@ -1,0 +1,49 @@
+.model-item {
+    position: relative;
+    &__title {
+        font-family: $primaryFontBold;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__price {
+        font-family: $primaryFontBold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $beige;
+        margin: 15px 0 25px;
+    }
+    img {
+        padding: 22px 25px 25px 25px;
+    }
+    .borderLeftTop {
+        position: absolute;
+        top: 0;
+        border-left: 3px solid $beige;
+        width: 3px;
+        background-color: $beige;
+        height: 25px;
+    }
+    .borderTopLeft {
+        position: absolute;
+        top: 0;
+        height: 3px;
+        width: 25px;
+        background-color: $beige;
+    }
+    .borderRightBottom {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 25px;
+        width: 3px;
+        background-color: $beige;
+    }
+    .borderBottomRight {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        width: 25px;
+        background-color: $beige;
+    }
+}

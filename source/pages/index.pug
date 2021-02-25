@@ -12,6 +12,38 @@ html(lang="en")
       .container 
         include ./navbar.pug 
         include ./carousel.pug
+    section.free-delivery 
+      .free-delivery__title 
+        b Бесплатная доставка 
+        | от 3000Р
+      .free-delivery__descr Сделайте заказ и получите подарок!
+    section.collections 
+      .container 
+        .collections-item 
+          .collections-item__title 
+            b Мужская 
+            |коллекция
+          .collections-item__descr Обувь, полуверы, костюмы
+          button.btn.btn-primary(type="button") 
+            img(src="../img/Arrow.svg", alt="")
+          img(src="../img/men.png", alt="men")
+        .collections-item 
+          .collections-item__title 
+            b Женская 
+            |коллекция
+          .collections-item__descr Обувь, полуверы, костюмы
+          button.btn.btn-primary(type="button") 
+            img(src="../img/Arrow.svg", alt="")
+          img(src="../img/women.png", alt="women")
+    include ./catalog.pug
+    section.modals.container 
+      .models__title Новые модели
+      .models__content 
+        -for(var x=0;x<4;x++)
+          include ./madel.pug 
+      button.btn.btn-primary(type="button") Все модели
+        img(src="../img/Arrow.svg", alt="")
+
     
         
 
