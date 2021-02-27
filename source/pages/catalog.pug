@@ -1,0 +1,17 @@
+mixin catalogitem(color)
+    .col.catalog-item
+        .catalog-item__title Платья
+        img(src="../img/"+ color + 'shit.png', alt="shit")
+
+
+section.catalog.container
+    .row
+        +catalogitem('grey')
+        +catalogitem('beige')
+        +catalogitem('grey')
+        +catalogitem('beige')
+    .row
+        +catalogitem('grey')
+        +catalogitem('beige')
+        +catalogitem('grey')
+        +catalogitem('beige')

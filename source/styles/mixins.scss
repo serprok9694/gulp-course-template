@@ -1,9 +1,17 @@
 @mixin flex-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 @mixin flex-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin navbar-point {
+    font-family: $primaryFontBold;
+    font-weight: 500;
+    font-size: 14px;
+    color: $darkGray;
+    letter-spacing: 0.03em;
 }
