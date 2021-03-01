@@ -8,10 +8,53 @@ html(lang="ru")
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
     title THE LOOP
   body
+
+    //- ========= home section ===========
     header.home-section
       .container
         include ./navbar.pug
         include ./carousel.html
+        
+    
+    //- ========= free delivery ===========
+    section.free-delivery 
+      .free-delivery__title
+        b Бесплатная доставка 
+        |от 3000₽
+      .free-delivery__description Сделайте заказ и получите подарок!
+
+    //- ========= collections ===========
+    section.collections 
+      .container
+        //- item-1
+        .collections-item
+          .collections-item__title 
+            b Мужская 
+            |коллекция
+          .collections-item__description Обувь, пуловеры, костюмы
+          button.btn.btn-primary(type="button")
+            img(src="../img/arrow.svg", alt="arrow")
+          img(src="../img/man.jpg", alt="man")
+        //- item-2
+        .collections-item
+          .collections-item__title 
+            b Женская 
+            |коллекция
+          .collections-item__description Обувь, пуловеры, костюмы
+          button.btn.btn-primary(type="button")
+            img(src="../img/arrow.svg", alt="arrow")
+          img(src="../img/woman.jpg", alt="woman")
+
+    include ./catalog.pug 
+
+    section.model.container
+      .model__title Новые модели
+      .model__content
+          -for(var x=0; x<4;x++)
+           include ./model.pug
+      button.btn.btn-primary(type="button") Все модели
+        img(src="../img/arrow.svg", alt="arrow")
+        
 
 
 
