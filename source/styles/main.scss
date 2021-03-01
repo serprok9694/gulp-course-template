@@ -106,3 +106,114 @@
     }
   }
 }
+.subscribe {
+  background-color: $darkGrey;
+  padding: 70px 0;
+  .container {
+    justify-content: space-between;
+    @include flex-row;
+  }
+  &__title {
+    font-family: $primaryFontBold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $white;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    input{
+    background-color: #F9F6F1;  
+    height: 100%;
+    padding-left: 20px;
+    border: 0;
+    margin-right: 35px;
+    width: 255px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      font-family: $primaryFontRegular;
+      color: #8D8D8D;
+
+    }
+    }
+  }
+}
+.main-links {
+  padding: 73px 0 78px;
+  background-color: $darkGrey;
+  color: $white;
+  .container {
+    @include flex-row;
+  }
+  &__info {
+    flex: 2;
+  }
+  &__descr{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 32px;
+    font-family: $primaryFontRegular;
+    width: 50%;
+    
+  }
+  &__navigation {
+    @include flex-row;
+    justify-content: space-between;
+    flex: 3;
+  }
+  &__navigation-list {
+    &-title {
+      font-size: 10px;
+      line-height: 12px;
+      font-family: $primaryFontBold;
+      text-transform: uppercase;
+    }
+    ul {
+      padding-left: 0;
+      margin-top: 15px;
+      &.social-links {
+        .social-links__vk::before {
+          content: url(../img/vk.png);
+          padding-right: 5px;
+        }
+        .social-links__fb::before {
+          content: url(../img/fb.png);
+          padding-right: 5px;
+        }
+        .social-links__insta::before {
+          content: url(../img/insta.png);
+          padding-right: 5px;
+        }
+
+        }
+      }
+    }
+    li {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: $primaryFontMedium;
+      list-style-type: none;
+      color: #CBCFD4;
+      margin: 5px 0;
+
+
+    }
+  }
+.footer {
+  padding: 30px 0 23px;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  div {
+    font-size: 14px;
+    line-height: 22px;
+    color: $darkGrey;
+    font-family: $primaryFontMedium;
+
+  }
+}
