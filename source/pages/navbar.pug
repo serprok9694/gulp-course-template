@@ -1,6 +1,9 @@
 nav.navbar
-	//- ============== Выпадающие списки ===================
+
+	//- ============== dropdowns ===================
 	.navbar-dropdowns
+
+		//- ======== dropdown men =========
 		<div class="dropdown">
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
 				Dropdown Для мужчин
@@ -12,6 +15,7 @@ nav.navbar
 			</ul>
 		</div>
 
+		//- ======== dropdown women =========
 		<div class="dropdown">
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
 				Dropdown Для женщин
@@ -23,6 +27,7 @@ nav.navbar
 			</ul>
 		</div>
 
+		//- ======== dropdown kids =========
 		<div class="dropdown">
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
 				Dropdown Для детей
@@ -34,17 +39,17 @@ nav.navbar
 			</ul>
 		</div>
 
-	//- ============== Лого навбара ===================
+	//- ============== navbar logo ===================
 	.navbar-logo
-		img(src="../img/logo.png", alt="THE LOOP")
+		img(src="../img/navbar/logo.png", alt="THE LOOP")
 
-	//- ============== Оплата и доставка ===================
+	//- ============== points ===================
 	.navbar-points
 		.navbar-points__point Оплата
 		.navbar-points__point Доставка
 
-	//- ============== Корзина ===================
+	//- ============== trash ===================
 	.navbar-bag
-		img(src="../img/bag.png", alt="Trash")
+		img(src="../img/navbar/bag.png", alt="Trash")
 		.navbar-bag__count
 			span 5
