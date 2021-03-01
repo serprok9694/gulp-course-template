@@ -36,14 +36,69 @@ html(lang="en")
              img(src="../img/Arrow.svg", alt="Arrow")
           img(src="../img/girl.png", alt="girl")  
     include ./catalog.pug
-    section.models.container
-      .models__title Новые модели
-      .models__content
-        -for(var x=0;x<4;x++)
-          include ./model.pug
+    
+    mixin modelsSection(title)
+      section.models.container
+        .models__title=title
+        .models__content
+          -for(var x=0;x<4;x++)
+            include ./model.pug
+        button.btn.btn-primary(type="button") Все модели
+          img(src="../img/Arrow.svg", alt="Arrow")
+    +modelsSection('НОВЫЕ МОДЕЛИ')
 
-      button.btn.btn-primary(type="button") Все модели
-        img(src="../img/Arrow.svg", alt="Arrow")
+
+    section.subscribe
+      .container
+        .subscribe__title ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ
+        .subscribe__form  
+          input(type="text", placeholder="Ваш e-mail")  
+          button.btn.btn-primary(type="button") Подписаться  
+
+    +modelsSection('СКИДКИ ДО 90%')   
+
+    section.main-links
+      .container
+        .main-linka__info
+          img(src="../img/logowhite.svg", alt="logowhite")
+          .main-links__descrLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+        .main-links__navigation
+          .main-links__navigation-list
+            .main-links__navigation-list-title Основные ссылки
+              ul
+                li О компании
+                li Каталог
+                li Доставка
+                li Оплата
+        .main-links__navigation-list
+            .main-links__navigation-list-title Основные ссылки
+              ul
+                li О компании
+                li Каталог
+                li Доставка
+                li Оплата
+        .main-links__navigation-list
+            .main-links__navigation-list-title Основные ссылки
+              ul
+                li О компании
+                li Каталог
+                li Доставка
+                li Оплата
+        .main-links__navigation-list
+            .main-links__navigation-list-title Основные ссылки
+              ul.social-links
+                li.social-links__vk VK.com
+                li.social-links__fb Facebook
+                li.social-links__inst Instagram
+    footer.footer  
+      .container
+        .footer__copyright   
+        .footer__private-policy       
+
+
+
+
+
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous")
 
 
