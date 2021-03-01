@@ -36,13 +36,65 @@ html(lang="en")
             img(src="../img/Arrow.svg", alt="")
           img(src="../img/women.png", alt="women")
     include ./catalog.pug
-    section.modals.container 
-      .models__title Новые модели
-      .models__content 
-        -for(var x=0;x<4;x++)
-          include ./madel.pug 
-      button.btn.btn-primary(type="button") Все модели
-        img(src="../img/Arrow.svg", alt="")
+    mixin desModel(title)
+      section.modals.container 
+        .models__title= title
+        .models__content 
+          -for(var x=0;x<4;x++)
+            include ./madel.pug 
+        button.btn.btn-primary(type="button") Все модели
+          img(src="../img/Arrow.svg", alt="")
+    +desModel('Новые модели')
+    section.subscribe 
+      .container 
+        .subscribe__title Получайте скидки и подарки
+        .subscripe__form 
+          input(type="text", placeholder="Ваш e-mail")
+          button.btn.btn-primary(type="button") Подписаться
+    +desModel('скидки 90%')
+    section.main-links
+      .container
+        .main-link__info 
+          img(src="../img/logo-white.png", alt="") 
+          .main-links__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+        .main-links__navigation 
+          .main-links__navigation-list 
+            .main-links__navigation-list-title Основные ссылки
+            ul
+              li О компании
+              li Каталог
+              li Доставка
+              li Оплата
+        .main-links__navigation 
+          .main-links__navigation-list 
+            .main-links__navigation-list-title Категории
+            ul
+              li Мужская одежда
+              li Женская одежда
+              li Детская одежда
+              li Для животных
+        .main-links__navigation 
+          .main-links__navigation-list 
+            .main-links__navigation-list-title Основные ссылки
+            ul
+              li О компании
+              li Каталог
+              li Доставка
+              li Оплата
+        .main-links__navigation 
+          .main-links__navigation-list 
+            .main-links__navigation-list-title Соц. сети
+            ul.social-links 
+              li.social-links__vk VK.com
+              li.social-links__fb FB.com
+              li.social-links__insta Insta
+    footer.footer 
+      .container 
+        .footer__copyright  Copyright © 2019. Все права защищены
+        .footer__privat-policy Политика приватности
+        
+            
+
 
     
         
