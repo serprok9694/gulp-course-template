@@ -8,6 +8,41 @@ html(lang="en")
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
     title Document
   body
-    p hello!
+    section.home-section 
+      .container
+          include ./navbar.pug
+          include ./carousel.pug
+      section.free-delivery 
+        .free-delivery__title 
+          b Бесплатная доставка  
+          | от 3000R
+        .free-delivery__deskr Сделайте заказ и получите подарок!
+      section.collections
+        .container 
+          .collections-item 
+            .collections-item__title  
+              b Мужская
+              | коллекция 
+            .collections-item__descr Обувь, полуверы, костюмы
+            button.btn.btn-primary(type="button") 
+              img(src="../img/arrow.svg", alt="")
+            img(src="../img/men.png", alt="men")
+          .collections-item 
+            .collections-item__title 
+              b Женская
+              | коллекция 
+            .collections-item__descr Обувь, полуверы, костюмы
+            button.btn.btn-primary(type="button") 
+              img(src="../img/arrow.svg", alt="")
+            img(src="../img/women (1).png", alt="women")
+      include  ./catalog.pug
+      section.models.container  
+        .models__title Новые модели 
+        .models__content
+          -for(var x=0;x<4; x++)
+            include ./model.pug
+        button.btn.btn-primary(type="button") Все модели 
+          img(src="../img/arrow.svg", alt="")
 
-    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous")
+
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous")
