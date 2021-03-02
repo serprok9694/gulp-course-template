@@ -109,3 +109,111 @@
     }
   }
 }
+.subscribe {
+  background-color: $darkGrey;
+  padding: 70px 0;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  &__title{
+    font-family: $primaryFontBold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $white;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    input {
+      background: #F9F6F1;
+      height: 100%;
+      padding-left: 20px;
+      border: 0;
+      margin-right: 35px;
+      width: 255px;
+      &::placeholder {
+        font-family: $primaryFontRegular;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        color: #8D8D8D;
+      }
+    }
+  }
+}
+.main-links {
+  padding: 73px 0 78px;
+  color: white;
+  background-color: $darkGrey;
+  .container {
+    @include flex-row;
+  }
+  &__info {
+    flex: 2;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 32px;
+    font-family: $primaryFontMedium;
+    flex: 1;
+    width: 50%;
+  }
+  &__navigation {
+    @include flex-row;
+    flex: 3;
+    justify-content: space-between;
+  }
+  &__navigation-list {
+    &__title {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    font-family: $primaryFontBold;
+    }
+    ul {
+      padding-left: 0;
+      margin-top: 15px;
+      &.social-links {
+        .social-links__vk::before {
+          content: url(../img/vk.png);
+          padding-right: 5px;
+        }
+        .social-links__fb::before {
+          content: url(../img/fb.png);
+          padding-right: 5px;
+
+        }
+        .social-links__insta::before {
+          content: url(../img/inst.png);
+          padding-right: 5px;
+
+        }
+      }
+    }
+    li {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: $primaryFontMedium;
+      color: #CBCFD4;
+      list-style-type: none;
+      margin: 5px 0;
+    }
+  }
+}
+.footer {
+  padding: 30px 0 23px;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  div {
+    font-size: 14px;
+    line-height: 22px;
+    color: $darkGrey;
+    font-family: $primaryFontMedium;
+  }
+}
