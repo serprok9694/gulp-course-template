@@ -6,6 +6,9 @@
            background-color: transparent;
            border: none;
        }
+       @media (max-width: $md) {
+        display: none;
+      }
     }
     &-points{
         @include flex-row;
@@ -13,6 +16,9 @@
            @include navbar-point;
            margin-right: 35px;
         }
+        @media (max-width: $md) {
+            display: none;
+          }
     }
     &-bag{
         @include flex-row;
