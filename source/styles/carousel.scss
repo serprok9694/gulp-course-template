@@ -25,6 +25,11 @@
             line-height: 67px;
             letter-spacing: 0.04em;
             margin: 35px 0 55px;
+            @media(max-width: $md) {
+                font-size: 20px;
+                line-height: 24px;
+                top: 20px;
+            }
         }
         &__old-price {
             font-family: $primaryFontBold;
@@ -36,6 +41,11 @@
             position: absolute;
             top: 40px;
             right: 7px;
+            @media(max-width: $md) {
+                font-size: 20px;
+                line-height: 24px;
+                top: 0px;
+            }
         }
         &__new-price {
             font-family: $primaryFontBold;
@@ -46,6 +56,11 @@
             position: absolute;
             top: 83px;
             right: 0px;
+            @media(max-width: $md) {
+                font-size: 22px;
+                line-height: 26px;
+                top: 20px;
+            }
         }
     }
     &-indicators {
