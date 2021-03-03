@@ -36,26 +36,22 @@ html(lang="en")
             img(src="../img/arrow.svg", alt="arrow")
           img(src="../img/women.png", alt="women")
     include ./catalog.pug
-    section.models.container 
-      .models__title Новые модели
-      .models__content
-        -for(var x=0;x<4;x++)
-          include ./model.pug
-      button.btn.btn-primary(type="button") Все модели
-        img(src="../img/arrow.svg", alt="arrow")
+    mixin modelsSection(title)
+      section.models.container 
+        .models__title= title
+        .models__content
+          -for(var x=0;x<4;x++)
+            include ./model.pug
+        button.btn.btn-primary(type="button") Все модели
+          img(src="../img/arrow.svg", alt="arrow")
+    +modelsSection('Новые модели')
     section.subscribe 
       .container 
         .subscribe__title ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ
         .subscribe__form 
           input(type="text", placeholder="Ваш e-mail")
           button.btn.btn-primary(type="button") Подписаться
-    section.models.container 
-      .models__title Скидки до 90%
-      .models__content
-        -for(var x=0;x<4;x++)
-          include ./model.pug
-      button.btn.btn-primary(type="button") Все модели
-        img(src="../img/arrow.svg", alt="arrow")
+    +modelsSection('Скидки до 90%')
     section.main-links 
       .container 
         .main-links__info 
