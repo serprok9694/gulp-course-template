@@ -11,7 +11,7 @@ html(lang="en")
     section.home-section
      .container
        include ./navbar.pug 
-       include ./carousel.html
+       include ./carousel.pug
     section.free-delivery
       .free-delivery__title
         b Бесплатная доставка 
@@ -25,7 +25,7 @@ html(lang="en")
             | коллекция
           .collections-item__descr Обувь, полуверы, костюмы
           button.btn.btn-primary(type="button") 
-            img(src="../img/Arrow.png")
+            img(src="../img/Arrow.svg")
           img(src="../img/men.png", alt="men")
         .collections-item
           .collections-item__title
@@ -42,7 +42,7 @@ html(lang="en")
           -for(var x=0; x<4;x++)
             include ./model.pug
         button.btn.btn-primary(type="button") Все модели
-          img(src="../img/Arrow.png")
+          img(src="../img/Arrow.svg")
     +modelsSection('Новые модели')
     section.subscribe
       .container 
@@ -54,7 +54,7 @@ html(lang="en")
     section.main-links 
       .container 
         .main-links__info 
-          img(src="../img/logo-white.jpg" alt="logo-white")
+          img(src="../img/logoWhite.png" alt="logo-white")
           .main-links__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
         .main-links__navigation 
           .main-links__navigation-list 
