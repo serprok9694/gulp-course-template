@@ -5,8 +5,8 @@
 
 		.dropdown button {
 			@include navbar-point;
-			background-color: transparent;
 			border: none;
+			background-color: transparent;
 		}
 	}
 
@@ -28,9 +28,10 @@
 		align-items: center;
 
 		&__count {
-			margin: 8px 0 0 15px;
 			@include flex-row;
 			align-items: center;
+
+			margin: 8px 0 0 15px;
 
 			span {
 				font-family: $primaryFontBold;

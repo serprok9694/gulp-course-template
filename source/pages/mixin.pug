@@ -1,13 +1,12 @@
-//- не работает
-
-//- mixin catalogItem(color)
-//- 	.col.catalog-item
-//- 		.catalog-item__title Платья
-//- 		img(src="../img/catalog/" + color + "-shirt.png", alt= color + "shirt")
+//- ======== catalog block ========
+mixin catalogItem(color)
+  .col.catalog-item
+    .catalog-item__title Платья
+    img(src="../img/catalog/" + color + "-shirt.png", alt= color + "shirt")
 
 
 //- ======== models block ========
-mixin model__title(title)
+mixin models_block(title)
       section.model.container
         .model__title= title
         .model__content

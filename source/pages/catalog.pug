@@ -1,7 +1,4 @@
-mixin catalogItem(color)
-	.col.catalog-item
-		.catalog-item__title Платья
-		img(src="../img/catalog/" + color + "-shirt.png", alt= color + "shirt")
+include ./mixin.pug
 
 section.catalog.container
 	.row
@@ -13,4 +10,4 @@ section.catalog.container
 		+catalogItem("cream")
 		+catalogItem("grey")
 		+catalogItem("cream")
-		+catalogItem("grey")
+		+catalogItem("grey") 
