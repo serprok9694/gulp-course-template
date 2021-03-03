@@ -1,16 +1,16 @@
-mixin catalogItem(color)
-    .col.catalog-item 
-        .catalog-item__title Платье
-        img(src="../img/" + color + '.png', alt="img")
+mixin catalogItem(color) 
+  .col.catalog-item
+    .catalog-item__title Платья
+    img(src="../img/" + color + 'Shirt.png', alt="shirt")
 
-section.catalog.container 
-    .row 
-        +catalogItem('grey')
-        +catalogItem('beige')
-        +catalogItem('grey')
-        +catalogItem('beige')
-    .row 
-        +catalogItem('beige')
-        +catalogItem('grey')
-        +catalogItem('beige')
-        +catalogItem('grey')
+section.catalog.container
+  .row
+    +catalogItem('grey')
+    +catalogItem('beige')
+    +catalogItem('grey')
+    +catalogItem('beige')
+  .row
+    +catalogItem('beige')
+    +catalogItem('grey')
+    +catalogItem('beige')
+    +catalogItem('grey')

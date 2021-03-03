@@ -1,42 +1,42 @@
 .navbar {
-    &-dropdowns {
-        @include flex-row;
-        .dropdown button {
-            @include navbar-point;
-            background-color: transparent;
-            
-        }
+  &-dropdowns {
+    @include flex-row;
+    .dropdown button {
+      @include navbar-point;
+      background-color: transparent;
+      border: none;
     }
-    &-points {
-        @include flex-row;
-        &__point {
-            @include navbar-point;
-            margin-right: 35px;
-        }
+  }
+  &-points {
+    @include flex-row;
+    &__point {
+      @include navbar-point;
+      margin-right: 35px;
     }
-    &-bag {
-        @include flex-row;
-        align-items: center;
-        &__count {
-            margin-left: 15px;
-            margin-top: 8px;
-            display: flex;
-            align-items: center;
-            span {
-                font-family: $primaryFontBold;
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: 0.03em;
-                color: $white;
-                background-color: $beige;
-                padding: 0 13px;
-            }
-            &:before {
-                content:'' ;
-                border-right: 13px solid $beige;
-                border-top: 7.5px solid transparent;
-                border-bottom: 7.5px solid transparent;
-            }
-        }
+  }
+  &-bag {
+    @include flex-row;
+    align-items: center;
+    &__count {
+      margin-left: 15px;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      span {
+        font-family: $primaryFontBold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+        color: $white;
+        background-color: $beige;
+        padding: 0 13px;
+      }
+      &:before {
+        content: '';
+        border-right: 13px solid $beige;
+        border-top: 7.5px solid transparent;
+        border-bottom: 7.5px solid transparent;
+      }
     }
+  }
 }
