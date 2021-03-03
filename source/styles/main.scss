@@ -217,3 +217,206 @@
 
   }
 }
+
+.free-delivery {
+  background-color: $darkGrey;
+  text-align: center;
+  color: $white;
+  padding: 80px 0 70px;
+  font-family: $primaryFontRegular;
+  &__title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    b {
+      font-family: $primaryFontBold;
+    }
+  }
+  &__descr {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+.collections {
+  background: linear-gradient(to right, $cream 50%, $lightGrey 50%);
+  .container {
+    @include flex-row;
+  }
+  &-item {
+    flex: 1;
+    @include flex-column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding: 60px 0 58px 36px;
+    font-family: $primaryFontMedium;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 25px 0 40px;
+    }
+    .btn.btn-primary {
+      padding: 12px 30px;
+    }
+    & > img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+.catalog {
+  &-item {
+    position: relative;
+    padding: 0 !important;
+    &__title {
+      font-size: 21px;
+      font-family: $primaryFontRegular;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      position: absolute;
+      left: 30px;
+      bottom: 24px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+.models {
+  text-align: center;
+  padding: 150px 0;
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $darkGrey;
+    font-family: $primaryFontBold
+  }
+  &__content {
+    @include flex-row;
+    justify-content: space-between;
+    margin: 103px 0;
+  }
+  .btn.btn-primary {
+    img {
+      margin-left: 9px;
+    }
+  }
+}
+.subscribe {
+  background-color: $darkGrey;
+  padding: 70px 0;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $white;
+    font-family: $primaryFontBold;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    input {
+      background-color: #F9F6F1;
+      height: 100%;
+      padding-left: 20px;
+      border: 0;
+      margin-right: 35px;
+      width: 255px;
+      &::placeholder {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        color: #8D8D8D;
+        font-family: $primaryFontRegular;
+      }
+    }
+  }
+}
+.main-links {
+  padding: 73px 0 78px;
+  color: $white;
+  background-color: $darkGrey;
+  .container {
+    @include flex-row;
+  }
+  &__info { 
+    flex: 2;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 32px;
+    font-family: $primaryFontRegular;
+    width: 50%;
+  }
+  &__navigation {
+    flex: 3;
+    @include flex-row;
+    justify-content: space-between;
+  }
+  &__navigation-list {
+    &-title {
+      font-size: 10px;
+      line-height: 12px;
+      font-family: $primaryFontBold;
+      text-transform: uppercase;
+    }
+    ul {
+      margin-top: 15px;
+      padding-left: 0;
+      &.social-links {
+        .social-links__vk::before {
+          content: url(../img/vk.png);
+          padding-right: 5px;
+        }
+        .social-links__fb::before {
+          content: url(../img/fb.png);
+          padding-right: 5px;
+        }
+        .social-links__insta::before {
+          content: url(../img/insta.png);
+          padding-right: 5px;
+        }
+      }
+    }
+    li {
+      font-size: 14px;
+      line-height: 22px;
+      color: #CBCFD4;
+      font-family: $primaryFontMedium;
+      list-style-type: none;
+      margin: 5px 0;
+    }
+  }
+}
+
+.footer {
+  padding: 30px 0 23px;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  div {
+    font-size: 14px;
+    line-height: 22px;
+    color: $darkGrey;
+    font-family: $primaryFontMedium;
+  }
+}
