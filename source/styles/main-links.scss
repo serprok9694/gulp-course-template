@@ -6,6 +6,11 @@
 
 	.container {
 		@include flex-row;
+
+		// .container @media
+		@media (max-width: $md) {
+			@include flex-column;
+		}
 	}
 }
 
@@ -21,6 +26,32 @@
 
 		margin-top: 32px;
 	}
+
+	// .main-links-info @media
+	@media (max-width: $md) {
+		@include flex-row;
+		align-items: center;
+
+		margin-bottom: 30px;
+
+		&__description {
+			width: 100%;
+			margin-top: 0;
+			margin-left: 20px;
+		}
+
+		img {
+			height: 40px;
+		}
+	}
+	@media (max-width: $xs) {
+		@include flex-column;
+
+		&__description {
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
 }
 
 .main-links__navigation {
@@ -28,7 +59,19 @@
 	justify-content: space-between;
 	flex: 3;
 
+	// .main-links__navigation @media
+	@media (max-width: $xs) {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
 	&-list {
+		// .main-links__navigation-list @media
+		@media (max-width: $xs) {
+			width: 50%;
+			margin-bottom: 15px;
+		}
+
 		&-title {
 			font-family: $primaryFontBold;
 			font-size: 10px;

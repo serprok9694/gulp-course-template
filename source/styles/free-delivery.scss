@@ -18,6 +18,12 @@
 		b {
 			font-family: $primaryFontBold;
 		}
+
+		// .free-delivery__title @media
+		@media (max-width: $md) {
+			font-size: 26px;
+			line-height: 30px;
+		}
 	}
 
 	&_description {

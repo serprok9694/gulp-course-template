@@ -9,5 +9,11 @@
 	border-radius: 0;
 	background-color: $accent;
 
-	padding: 17px 30px 15px;
+	padding: 17px 30px;
+
+	@media (max-width: $md) {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 12px 20px;
+	}
 }

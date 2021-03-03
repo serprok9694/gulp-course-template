@@ -3,6 +3,12 @@
 
 	.container {
 		@include flex-row;
+
+		// .container @media
+		// question: man.png не вписывается в фон
+		@media (max-width: $md) {
+			@include flex-column;
+		}
 	}
 
 	&-item {
@@ -20,6 +26,12 @@
 			line-height: 29px;
 			letter-spacing: 0.03em;
 			text-transform: uppercase;
+
+			// .collections-item @media
+			@media (max-width: $md) {
+				font-size: 26px;
+				line-height: 30px;
+			}
 		}
 
 		&__description {
@@ -37,6 +49,10 @@
 			position: absolute;
 			bottom: 0;
 			right: 0;
+
+			@media (max-width: $xs) {
+				transform: scale(0.75);
+			}
 		}
 	}
 }

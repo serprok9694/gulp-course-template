@@ -21,6 +21,12 @@
 			line-height: 37px;
 			letter-spacing: 0.02em;
 			color: $black;
+
+			// .carousel__first-title @media
+			@media (max-width: $md) {
+				font-size: 18px;
+				line-height: 26px;
+			}
 		}
 
 		&__second-title {
@@ -31,6 +37,12 @@
 			color: $black;
 
 			margin: 35px 0 55px;
+
+			// .carousel__second-title @media
+			@media (max-width: $md) {
+				font-size: 26px;
+				line-height: 30px;
+			}
 		}
 
 		// =================== price ========================
@@ -43,6 +55,14 @@
 			position: absolute;
 			top: 40px;
 			right: 7px;
+
+			// .carousel__old-price @media
+			@media (max-width: $md) {
+				font-size: 20px;
+				line-height: 24px;
+
+				top: 0;
+			}
 		}
 
 		&__new-price {
@@ -55,6 +75,14 @@
 			position: absolute;
 			top: 83px;
 			right: 0;
+
+			// .carousel__new-price @media
+			@media (max-width: $md) {
+				font-size: 30px;
+				line-height: 30px;
+
+				top: 30px;
+			}
 		}
 	}
 
