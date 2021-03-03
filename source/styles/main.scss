@@ -1,177 +1,32 @@
 @import "./fonts.scss";
-@import "./constants.scss";
+@import "./vars.scss";
 @import "./mixins.scss";
 @import "./button.scss";
 
-// =================== home section ========================
+// =================== blocks ========================
+
+// -------- home section --------
 @import "./home.scss";
 @import "./navbar.scss";
 @import "./carousel.scss";
 
-// =================== free delivery ========================
-.free-delivery {
-  background-color: $greyDark;
-  text-align: center;
-  color: $white;
-  padding: 80px 0 70px;
-  font-family: $primaryFontRegular;
+// -------- free delivery --------
+@import "./free-delivery.scss";
 
-  &__title {
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    margin-bottom: 23px;
+// -------- collections --------
+@import "./collections.scss";
 
-    b {
-      font-family: $primaryFontBold;
-    }
-  }
+// -------- catalog --------
+@import "./catalog.scss";
 
-  &_description {
-    font-size: 21px;
-    line-height: 26px;
-  }
-}
+// -------- models --------
+@import "./models.scss";
 
-// =================== collections ========================
-.collections {
-  background: linear-gradient(to right, $cream 50%, $greyLight 50%);
-  .container {
-    @include flex-row;
-  }
+// -------- subscribe --------
+@import "./subscribe.scss";
 
-  &-item {
-    position: relative;
-    @include flex-column;
-    align-items: flex-start;
-    flex: 1;
-    padding: 60px 0 58px 36px;
-    font-family: $primaryFontMedium;
-
-    &__title {
-      font-size: 24px;
-      line-height: 29px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    &__description {
-      font-size: 16px;
-      line-height: 20px;
-      margin: 25px 0 40px;
-    }
-
-    .btn.btn-primary {
-      padding: 8px 34px;
-    }
-
-    & > img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
-}
-
-// =================== catalog ========================
-.catalog {
-  &-item {
-    position: relative;
-    padding: 0 !important;
-
-    &__title {
-      position: absolute;
-      left: 30px;
-      bottom: 24px;
-      text-transform: uppercase;
-      font-family: $primaryFontRegular;
-      font-size: 21px;
-      line-height: 26px;
-      letter-spacing: 0.03em;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-// =================== models ========================
-.model {
-  text-align: center;
-  padding: 150px 0;
-
-  &__title {
-    color: $greyDark;
-    font-family: $primaryFontBold;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  &__content {
-    @include flex-row;
-    justify-content: space-between;
-    margin: 103px 0;
-  }
-  .btn.btn-primary {
-    img {
-      margin-left: 9px;
-    }
-  }
-}
-
-// =================== subscribe ========================
-.subscribe {
-  background-color: $greyDark;
-
-  padding: 70px 0;
-
-  .container {
-    @include flex-row;
-    justify-content: space-between;
-  }
-
-  &__title {
-    @include flex-row;
-    align-items: center;
-
-    font-family: $primaryFontBold;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: $white;
-  }
-
-  &__form {
-    @include flex-row;
-
-    input {
-      height: 100%;
-      width: 255px;
-
-      background-color: #f9f6f1;
-      border: none;
-
-      padding: 0 0 0 20px;
-      margin-right: 35px;
-
-      &::placeholder {
-        font-family: $primaryFontRegular;
-        font-size: 12px;
-        letter-spacing: 0.02em;
-        line-height: 15;
-        color: #8d8d8d;
-      }
-    }
-  }
-}
-
-// =================== main-links ========================
+// -------- main-links --------
 @import "./main-links.scss";
 
-// =================== footer ========================
+// -------- footer --------
 @import "./footer.scss";

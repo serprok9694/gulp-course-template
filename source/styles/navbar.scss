@@ -1,5 +1,5 @@
 .navbar {
-	// ============== Выпадающие списки ===================
+	// ============== dropdowns ===================
 	&-dropdowns {
 		@include flex-row;
 
@@ -10,7 +10,7 @@
 		}
 	}
 
-	// ============== Оплата и доставка ===================
+	// ============== points ===================
 	&-points {
 		@include flex-row;
 
@@ -22,7 +22,7 @@
 		}
 	}
 
-	// ============== Корзина ===================
+	// ============== trash ===================
 	&-bag {
 		@include flex-row;
 		align-items: center;
@@ -38,6 +38,7 @@
 				line-height: 15px;
 				letter-spacing: 0.03em;
 				color: $white;
+
 				background-color: $accent;
 
 				padding: 0 13px;

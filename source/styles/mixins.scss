@@ -1,3 +1,4 @@
+// ============== flex ====================
 @mixin flex-row {
   display: flex;
   flex-direction: row;
@@ -7,10 +8,57 @@
   flex-direction: column;
 }
 
+// ================ navbar-point ======================
 @mixin navbar-point {
   font-family: $primaryFontMedium;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: $greyDark;
+}
+
+// =============== model-item =======================
+@mixin border-mod {
+  position: absolute;
+  background-color: $accent;
+}
+
+// top left
+@mixin model-border-top-left($h, $w) {
+  @include border-mod;
+  height: $h + px;
+  width: $w + px;
+
+  top: 0;
+  left: 0;
+}
+
+// top right
+@mixin model-border-top-right($h, $w) {
+  @include border-mod;
+  height: $h + px;
+  width: $w + px;
+
+  top: 0;
+  right: 0;
+}
+
+// bottom right
+@mixin model-border-bottom-right($h, $w) {
+  @include border-mod;
+  height: $h + px;
+  width: $w + px;
+
+  bottom: 0;
+  right: 0;
+}
+
+// bottom left
+@mixin model-border-bottom-left($h, $w) {
+  @include border-mod;
+  height: $h + px;
+  width: $w + px;
+
+  bottom: 0;
+  left: 0;
 }

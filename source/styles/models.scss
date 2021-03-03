@@ -1,0 +1,83 @@
+// ============ model =================
+.model {
+	text-align: center;
+	padding: 150px 0;
+
+	&__title {
+		font-family: $primaryFontBold;
+		font-size: 36px;
+		line-height: 44px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: $greyDark;
+	}
+
+	&__content {
+		@include flex-row;
+		justify-content: space-between;
+
+		margin: 103px 0;
+	}
+
+	.btn.btn-primary {
+		img {
+			margin-left: 9px;
+		}
+	}
+}
+
+// ============ model-item =================
+.model-item {
+	position: relative;
+
+	&__title {
+		font-family: $primaryFontBold;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__price {
+		font-family: $primaryFontBold;
+		font-size: 18px;
+		line-height: 22px;
+		color: $accent;
+
+		margin: 15px 0 25px;
+	}
+
+	img {
+		padding: 22px 25px 25px;
+	}
+
+	// top left
+	.borderLeftTop {
+		@include model-border-top-left(25, 3);
+	}
+	.borderTopLeft {
+		@include model-border-top-left(3, 25);
+	}
+
+	// top right
+	.borderRightTop {
+		@include model-border-top-right(25, 3);
+	}
+	.borderTopRight {
+		@include model-border-top-right(3, 25);
+	}
+
+	// bottom right
+	.borderRightBottom {
+		@include model-border-bottom-right(25, 3);
+	}
+	.borderBottomRight {
+		@include model-border-bottom-right(3, 25);
+	}
+
+	// bottom left
+	.borderLeftBottom {
+		@include model-border-bottom-left(25, 3);
+	}
+	.borderBottomLeft {
+		@include model-border-bottom-left(3, 25);
+	}
+}
