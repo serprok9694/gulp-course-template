@@ -36,6 +36,9 @@
   background: linear-gradient(to right, $cream 50%, $lightGrey 50%);
   .container {
     @include flex-row;
+    @media (max-width: $md) {
+      @include flex-column;
+    }
   }
   &-item {
     flex: 1;
@@ -50,6 +53,11 @@
       line-height: 29px;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      @media (max-width: $md) {
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: none;
+      }
     }
     &__descr {
       font-size: 16px;
@@ -63,6 +71,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      @media (max-width: $xs) {
+        transform: scale(0.75)
+      }
     }
   }
 }
@@ -79,6 +90,15 @@
       position: absolute;
       left: 30px;
       bottom: 24px;
+      @media (max-width: $md) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @media (max-width: $xs) {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: none;
+      }
     }
     img {
       width: 100%;
@@ -88,18 +108,31 @@
 .models {
   text-align: center;
   padding: 150px 0;
+  @media (max-width: $xs) {
+    padding: 50px 0;
+  }
   &__title {
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $darkGrey;
-    font-family: $primaryFontBold
+    font-family: $primaryFontBold;
+    @media (max-width: $md) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &__content {
     @include flex-row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 103px 0;
+  }
+    @media (max-width: $xs) {
+      justify-content: center;
+      margin: 50px 0;
+    }
   }
   .btn.btn-primary {
     img {
@@ -113,6 +146,15 @@
   .container {
     @include flex-row;
     justify-content: space-between;
+    @media (max-width: $md) {
+      @include flex-column;
+    }
+  }
+  &__form {
+    @media (max-width: $md) {
+      @include flex-column;
+      align-items: center;
+    }
   }
   &__title {
     font-size: 30px;
@@ -148,21 +190,45 @@
   background-color: $darkGrey;
   .container {
     @include flex-row;
+    @media (max-width: $md) {
+      @include flex-column;
+    }
   }
   &__info { 
     flex: 2;
-  }
+    @media (max-width: $md) {
+      @include flex-row;
+      margin-bottom: 30px;
+      img {
+        // flex: 1;
+        height: 40px;
+        width: 200px;
+      }
+    }
+    @media (max-width: $sx) {
+      @include flex-column;
+      margin-bottom: 30px;
+    }
   &__descr {
     font-size: 14px;
     line-height: 22px;
     margin-top: 32px;
     font-family: $primaryFontRegular;
     width: 50%;
+    @media (max-width: $md) {
+      flex: 7;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 20px;
+    }
   }
   &__navigation {
     flex: 3;
     @include flex-row;
     justify-content: space-between;
+    @media (max-width: $xs) {
+      flex-wrap: wrap;
+    }
   }
   &__navigation-list {
     &-title {

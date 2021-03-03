@@ -6,12 +6,18 @@
       background-color: transparent;
       border: none;
     }
+    @media (max-width: $md) {
+      display: none;
+    }
   }
   &-points {
     @include flex-row;
     &__point {
       @include navbar-point;
       margin-right: 35px;
+    }
+    @media (max-width: $md) {
+      display: none;
     }
   }
   &-bag {
