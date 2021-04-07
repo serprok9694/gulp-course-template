@@ -1,0 +1,60 @@
+.carousel {
+    margin-top: 126px;
+    &-indicators {
+        position: static !important;
+        button {
+            width: 40px !important;
+            height: 7px !important;
+            margin: 0 7.5px !important;
+            background-color: #CECECE !important;
+            &.active {
+                background-color: $second-color !important;
+            }
+        }
+    }
+    &-item {
+        &-content {
+            @include flex-row;
+        }
+        &__description, &__image {
+            flex: 1;
+            @include flex-column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__image {
+            position: relative;
+        }
+        &__old-price {
+            position: absolute;
+            right: 7px;
+            top: 40px;
+            font-size: 24px;
+            line-height: 29px;
+            font-family: $primaryFontBold;
+        }
+        &__new-price {
+            position: absolute;
+            right: 0;
+            top: 83px;
+            font-size: 42px;
+            line-height: 51px;
+            color: #D84033;
+            font-family: $primaryFontBold;
+        }
+        &__first-title {
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        &__second-title {
+            font-size: 55px;
+            line-height: 67px;
+            letter-spacing: 0.04em;
+            color: #000000;
+            font-family: Montserrat Bold;
+            margin: 35px 0 55px;
+        }
+    }
+}

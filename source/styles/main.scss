@@ -1,7 +1,15 @@
 @import './fonts.scss';
 @import './constants.scss';
 @import './mixins.scss';
+@import './style-navbar.scss';
+@import './buttom.scss';
+@import './carousel.scss';
+@import './free-delivery-section.scss';
 
 body {
   color: red;
+}
+
+.home-section {
+  background-color: $background-page;
 }

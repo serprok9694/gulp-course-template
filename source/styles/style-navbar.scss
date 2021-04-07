@@ -1,0 +1,43 @@
+.navbar {
+    &-dropdowns {
+        @include flex-row;
+        .dropdown button {
+            border: 0;
+            background-color: transparent;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            font-family: $primaryFontMedium;
+        }
+    }
+    &-points {
+        @include flex-row;
+        &__point {
+            @include navbar-point;
+            margin-right: 35px;
+        }
+    }
+    &-bag {
+        @include flex-row;
+        align-items: center;
+        &__count {
+            @include flex-row;
+            margin: 8px 0 0 15px;
+            span {
+                background-color: $second-color;
+                padding: 0 13px;
+                font-size: 12px;
+                line-height: 16px;
+                color: $white;
+                font-family: $primaryFontBold;
+            }
+            &::before {
+                content: '';
+                border-right: 17px solid $second-color;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+    }
+}
