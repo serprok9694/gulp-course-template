@@ -1,0 +1,18 @@
+.free-delivery {
+    background-color: $black;
+    text-align: center;
+    padding: 80px 0 70px;
+    h2 {
+        color: $white;
+        margin-bottom: 23px;
+        span {
+            font-family: $primaryFontRegular; 
+        }  
+    }
+    p {
+        color: $white;
+        font-family: $primaryFontRegular;
+        font-size: 21px;
+        line-height: 26px;
+    }
+}

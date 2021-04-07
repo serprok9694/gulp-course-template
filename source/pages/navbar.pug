@@ -1,0 +1,41 @@
+nav.navbar
+    .navbar-dropdowns
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                | Для мужчин
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Одежда</a></li>
+                <li><a class="dropdown-item" href="#">Обувь</a></li>
+                <li><a class="dropdown-item" href="#">Аксесссуары</a></li>
+            </ul>
+        </div>
+        .dropdown
+            button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                | Для женщин
+            ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
+                li
+                    a.dropdown-item(href='#') Одежда
+                li
+                    a.dropdown-item(href='#') Обувь
+                li
+                    a.dropdown-item(href='#') Аксуессуары
+        .dropdown
+            button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                | Для детей
+            ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
+                li
+                    a.dropdown-item(href='#') Одежда
+                li
+                    a.dropdown-item(href='#') Обувь
+                li
+                    a.dropdown-item(href='#') Аксуессуары
+    .navbar-logo
+        img(src="../img/logo.png", alt="logo")
+    .navbar-points  
+        .navbar-points__point Оплата
+        .navbar-points__point Доставка
+    .navbar-bag
+        img(src="../img/shopping-basket-button.png", alt="bag")
+        .navbar-bag__count 
+            span 5
