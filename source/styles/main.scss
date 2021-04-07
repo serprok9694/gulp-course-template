@@ -2,7 +2,15 @@
 @import './constants.scss';
 @import './mixins.scss';
 @import './navbar.scss';
+@import './button.scss';
+@import './carousel.scss';
 
-body {
-  // color: red;
+.home-section {
+  background-color: $backgroundBeige;
+  padding: 50px 0 70px;
+}
+
+.free-delivery-section {
+  height: 235px;
+  background-color: #212121;
 }
