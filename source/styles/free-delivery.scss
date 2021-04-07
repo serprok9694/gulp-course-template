@@ -1,0 +1,30 @@
+.free-delivery {
+    background-color: $black;
+    .container {
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        padding-top: 80px;
+        padding-bottom: 69px;
+        .title {
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            font-family: $primaryFontBold;
+            margin-bottom: 23px;
+            span {
+            font-family: $primaryFontRegular;
+            }
+        }
+        span {
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            font-family: $primaryFontRegular;
+            font-weight: 100;   
+        }
+    }
+}

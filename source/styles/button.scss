@@ -1,0 +1,21 @@
+.btn.btn-primary {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    color: $white;
+    font-family: $primaryFontMedium;
+    background-color: $beige;
+    padding: 17px 30px;
+    border: 0;
+    border-radius: 0%;
+    text-transform: uppercase;
+    transition: .3s;
+    &:hover, &:focus, &:active {
+        background-color: $beige;  
+        box-shadow: none;
+        opacity: 0.7;
+    }
+}
+
+ 
