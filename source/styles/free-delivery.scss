@@ -1,0 +1,7 @@
+.free-delivery {
+    @include flex-column;
+    justify-content: center;
+    background-color: $black;
+    height: 235px;
+    text-align: center;
+}
