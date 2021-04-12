@@ -5,9 +5,30 @@
 @import './button.scss';
 @import './carousel.scss';
 @import './free-delivery.scss';
+@import './collections.scss';
+@import './catalog.scss';
+@import './model.scss';
 
 .home-section {
   background-color: $backgroundBeige;
   padding: 50px 0 70px;
 }
 
+.model {
+  text-align: center;
+  padding: 150px 0;
+  &__title {
+    font-family: $primaryFontBold;
+    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $darkGrey;
+  }
+  &__content {
+    @include flex-row;
+    justify-content: space-between;
+    margin: 103px 0;
+  }
+}
