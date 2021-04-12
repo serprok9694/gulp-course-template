@@ -1,0 +1,19 @@
+.catalog{
+    &-item {
+        position: relative;
+        padding: 0 !important;
+        &__title {
+            font-size: 21px;
+            line-height: 26px;
+            letter-spacing: 0.03em;
+            font-family: $primaryFontRegular;
+            text-transform: uppercase;
+            position: absolute;
+            left: 30px;
+            bottom: 24px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

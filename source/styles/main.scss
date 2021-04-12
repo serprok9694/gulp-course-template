@@ -4,6 +4,9 @@
 @import './navbar.scss';
 @import './button.scss';
 @import './carousel.scss';
+@import './collections.scss';
+@import './catalog.scss';
+@import './model.scss';
 
 body {
   // color: red;
@@ -12,4 +15,22 @@ body {
 .home-section {
   background-color: $backgroundBeige;
   padding: 50px 0 70px;
+}
+
+.models {
+  text-align: center;
+  padding:  150px 0;
+  &__title{
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: $primaryFontBold;
+    color: $darkGrey;
+  }
+  &__content {
+    @include flex-row;
+    justify-content: space-between;
+    margin: 103px 0;
+  }
 }
