@@ -1,0 +1,16 @@
+.model-item {
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $primaryFontBold;
+  }
+  &__price {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $primaryFontBold;
+    color: $beige;
+  }
+  img {
+    padding: 22px 25px 25px 25px;
+  }
+}

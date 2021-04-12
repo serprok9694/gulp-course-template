@@ -1,0 +1,16 @@
+mixin catalogItem(color)
+  .catalog-item.col 
+    .catalog-item__title Платья
+    img(src="../img/" + color + "Shirt.png", alt="shirt")
+
+section.catalog.container
+  .row
+    +catalogItem('grey')
+    +catalogItem('beige')
+    +catalogItem('grey')
+    +catalogItem('beige')
+  .row 
+    +catalogItem('beige')
+    +catalogItem('grey')
+    +catalogItem('beige')
+    +catalogItem('grey')
