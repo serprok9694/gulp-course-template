@@ -1,0 +1,9 @@
+mixin modelSelection(title)
+    section.models.container
+        .madels__title= title
+        .models__content
+        -for (var x=0;x<4;x++)
+            include ./model.pug
+        button.btn.btn-primary(type='button')
+        | Все модели
+        img(src="../img/Arrow.png", alt="arrow")
