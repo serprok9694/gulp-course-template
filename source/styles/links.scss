@@ -1,0 +1,39 @@
+.links {
+  background-color: $darkGrey;
+  color: $white;
+  padding: 73px 0 78px;
+  font-family: $primaryFontMedium;
+  .container {
+    @include flex-row;
+  }
+  &__about {
+    flex: 1;
+    font-size: 14px;
+    line-height: 22px;
+    p {
+      margin-top: 32px;
+    }
+  }
+  &__lists {
+    flex: 3;
+    &-item {
+      &-title {
+        font-size: 10px;
+        line-height: 12px;
+        font-family: $primaryFontBold;
+        text-transform: uppercase;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 20px;
+        li {
+          font-size: 14px;
+          line-height: 22px;
+          color: #CBCFD4;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}

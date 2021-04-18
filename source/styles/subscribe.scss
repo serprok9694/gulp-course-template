@@ -1,0 +1,37 @@
+.subscribe {
+  padding: 70px 0;
+  background-color: $darkGrey;
+  .container {
+    @include flex-row;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: $primaryFontBold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $white;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    input {
+      width: 255px;
+      background-color: $backgroundBeige;
+      padding: 12px 0 12px 20px;
+      margin-right: 35px;
+      border: 0;
+      &:focus {
+        outline: 0;
+      }
+      &::placeholder {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        font-family: $primaryFontRegular;
+        color: #8D8D8D;
+      }
+    }
+  }
+}

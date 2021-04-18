@@ -15,10 +15,10 @@ html(lang="en")
     section.free-delivery-section
     include ./collections.pug
     include ./catalog.pug
-    section.models.container 
-      .models__title Новые модели
-      .models__content
-        -for(var x=0;x<4;x++)
-          include ./model.pug
+    include ./models.pug
+    +modelsSection('Новые модели')
+    include ./subscribe.pug
+    +modelsSection('Скидки до 90%')
+    include ./links.pug
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous")
