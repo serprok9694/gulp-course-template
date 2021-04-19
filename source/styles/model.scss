@@ -4,6 +4,9 @@
     font-size: 14px;
     line-height: 17px;
     font-family: $primaryFontBold;
+    @media (max-width: $md) {
+      margin: 20px;
+    }
   }
   &__price {
     font-size: 18px;

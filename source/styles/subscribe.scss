@@ -2,6 +2,10 @@
   padding: 70px 0;
   background-color: $darkGrey;
   .container {
+    @media (max-width: $md) {
+      @include flex-column;
+      text-align: center;
+    }
     @include flex-row;
     justify-content: space-between;
   }

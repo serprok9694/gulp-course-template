@@ -31,6 +31,10 @@
       font-size: 30px;
       line-height: 37px;
       letter-spacing: 0.02em;
+      @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
 
     &__second-title {
@@ -39,6 +43,10 @@
       line-height: 67px;
       letter-spacing: 0.04em;
       margin: 35px 0 55px;
+      @media (max-width: $md) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     &__old-price {
@@ -50,6 +58,10 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       font-family: $primaryFontBold;
+      @media (max-width: $md) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     &__new-price {
@@ -62,6 +74,10 @@
       text-transform: uppercase;
       color: #D84033;
       font-family: $primaryFontBold;
+      @media (max-width: $md) {
+        font-size: 22px;
+        line-height: 26px;
+      }
     }
   }
 }
