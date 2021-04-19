@@ -5,17 +5,20 @@
   font-family: $primaryFontMedium;
   .container {
     @include flex-row;
+    justify-content: space-between;
   }
   &__about {
-    flex: 1;
     font-size: 14px;
     line-height: 22px;
+    width: 20%;
     p {
       margin-top: 32px;
     }
   }
   &__lists {
-    flex: 3;
+    @include flex-row;
+    justify-content: space-between;
+    width: 60%;
     &-item {
       &-title {
         font-size: 10px;
@@ -32,6 +35,18 @@
           line-height: 22px;
           color: #CBCFD4;
           margin: 5px 0;
+          &.vk-link::before {
+            content: url(../img/vk.png);
+            margin-right: 5px;
+          }
+          &.fb-link::before {
+            content: url(../img/fb.png);
+            margin-right: 5px;
+          }
+          &.insta-link::before {
+            content: url(../img/insta.png);
+            margin-right: 5px;
+          }
         }
       }
     }
