@@ -1,4 +1,5 @@
 .catalog {
+<<<<<<< HEAD
     &-item {
         position: relative;
         padding: 0 !important;
@@ -16,4 +17,23 @@
             width: 100%;
         }
     }
+=======
+  &-item {
+    position: relative;
+    padding: 0 !important;
+    &__title {
+      font-size: 21px;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      font-family: $primaryFontRegular;
+      text-transform: uppercase;
+      position: absolute;
+      left: 30px;
+      bottom: 24px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+>>>>>>> e5d3a96120483c97b59bf4468a8315ef79b72e84
 }

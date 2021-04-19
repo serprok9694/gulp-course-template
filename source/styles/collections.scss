@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .collection {
     background: linear-gradient(to right, $backgroundBeige 50%, $lightGrey 50%);
     .container {
@@ -30,4 +31,38 @@
             bottom: 0;
         }
     }
+=======
+.collections {
+  background: linear-gradient(to right, $backgroundBeige 50%, $lightGrey 50%);
+  .container {
+    @include flex-row;
+  }
+  &-item {
+    flex: 1;
+    @include flex-column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: $primaryFontMedium;
+    position: relative;
+    padding: 60px 0 58px 36px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.03em;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 25px 0 40px;
+    }
+    .btn.btn-primary {
+      padding: 11px 30px;
+    }
+    & > img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+>>>>>>> e5d3a96120483c97b59bf4468a8315ef79b72e84
 }

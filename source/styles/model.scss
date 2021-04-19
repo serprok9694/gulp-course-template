@@ -1,4 +1,5 @@
 .model-item {
+<<<<<<< HEAD
     &__title {
     font-family: $primaryFontBold;
     font-size: 14px;
@@ -49,4 +50,55 @@
             transform: rotate(-90deg);
         }
     }
+=======
+  position: relative;
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $primaryFontBold;
+  }
+  &__price {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $primaryFontBold;
+    color: $beige;
+    margin: 15px 0 25px;
+  }
+  img {
+    padding: 22px 25px 25px 25px;
+  }
+  .borderLeftTop {
+    width: 3px;
+    height: 25px;
+    background-color: $beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .borderTopLeft {
+    width: 25px;
+    height: 3px;
+    background-color: $beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .cornerBottom {
+    width: 25px;
+    height: 25px;
+    border-right: 3px solid $beige;
+    border-bottom: 3px solid $beige;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &.left {
+      left: 0;
+      transform: rotate(90deg);
+    }
+    &.top {
+      top: 0;
+      transform: rotate(-90deg);
+    }
+  }
+>>>>>>> e5d3a96120483c97b59bf4468a8315ef79b72e84
 }
