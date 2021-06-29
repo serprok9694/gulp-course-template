@@ -1,40 +1,6 @@
 @import './fonts.scss';
-@import './constants.scss';
 @import './mixins.scss';
-@import './navbar.scss';
-@import './button.scss';
-@import './carousel.scss';
-@import './collections.scss';
-@import './catalog.scss';
-@import './model.scss';
-@import './subscribe.scss';
-@import './links.scss';
-@import './footer.scss';
 
-.home-section {
-  background-color: $backgroundBeige;
-  padding: 50px 0 70px;
-}
-
-.free-delivery-section {
-  height: 235px;
-  background-color: $darkGrey;
-}
-
-.models {
-  text-align: center;
-  padding: 150px 0;
-  &__title {
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-family: $primaryFontBold;
-    color: $darkGrey;
-  }
-  &__content {
-    @include flex-row;
-    justify-content: space-between;
-    margin: 103px 0;
-  }
+h1 {
+  color: red;
 }
