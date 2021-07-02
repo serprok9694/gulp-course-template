@@ -1,0 +1,29 @@
+.carousel {
+    &-item {
+        &_content {
+            @include flex-row;
+        }
+        &_description,
+        &_picture {
+            flex: 1;
+            @include flex-column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &_first-title {
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+            font-family: $primaryFontBold;
+            color: $black;
+        }
+        h1 {
+            color: $black;
+            font-size: 55px;
+            line-height: 67px;
+            letter-spacing: 0.04em;
+            margin: 35px 0 55px;
+            font-family: $;
+        }
+    }
+}
