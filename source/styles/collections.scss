@@ -1,0 +1,36 @@
+.collections {
+  background: linear-gradient(to right, $cream 50%, $mediumGrey 50%);
+  .container {
+    @include flex-row;
+  }
+  &-item {
+    flex: 1;
+    @include flex-column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 0 58px 36px;
+    position: relative;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.03em;
+      font-family: $primaryFontRegular;
+      text-transform: uppercase;
+    }
+    &__descr {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: $primaryFontRegular;
+      margin: 25px 0 40px;
+    }
+    & > img {
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+    }
+    .btn.btn-primary {
+      padding: 12px 30px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 .carousel {
+  margin-top: 126px;
   &-item {
     &__content {
       @include flex-row;
@@ -24,6 +25,39 @@
       line-height: 67px;
       letter-spacing: 0.04em;
       margin: 35px 0 55px;
+    }
+    &__old-price {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.05em;
+      font-family: $primaryFontBold;
+      position: absolute;
+      top: 40px;
+      right: 7px;
+    }
+    &__new-price {
+      font-size: 42px;
+      line-height: 51px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #D84033;
+      font-family: $primaryFontBold;
+      position: absolute;
+      top: 83px;
+      right: 0;
+    }
+  }
+  &-indicators {
+    position: static !important;
+    margin-top: 130px;
+    button {
+      width: 40px !important;
+      height: 7px !important;
+      margin: 0 7.5px !important  ;
+      background-color: $lightGrey !important;
+      &.active {
+        background-color: $beige !important;
+      }
     }
   }
 }
