@@ -1,0 +1,39 @@
+@import './fonts.scss';
+@import './constants.scss';
+@import './mixins.scss';
+@import './carousel.scss';
+@import './button.scss';
+@import './navbar.scss';
+@import './advertising.scss';
+@import './collection';
+@import './catalog.scss';
+@import './models.scss';
+@import './model.scss';
+@import './subscribe.scss';
+@import './links.scss';
+
+.container__navbar{
+  width: 75%;
+  margin: 0 auto;
+}
+.container__carousel {
+  width: 75%;
+  margin: 0 auto;
+}
+section.home-section{
+  background: #F9F6F1;
+}
+section.advertising{
+  background-color:#000;
+}
+.container__advertising{
+  width: 75%;
+  margin: 0 auto;
+}
+section.collection{
+  background: linear-gradient(to right, $cream 50%, $mediumGrey 50%); 
+  .container__collection{
+    width: 75%;
+  margin: 0 auto;
+  }
+}

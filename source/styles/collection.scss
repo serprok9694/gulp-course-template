@@ -1,0 +1,26 @@
+.container__collection {
+    flex: 1;
+    @include flex-row;
+}
+.collection-item__content{
+ @include flex-row;
+ padding:85px 0 60px 35px;
+}
+.collection-item__description {
+    position: relative;
+    top:-25px;
+    h3 {
+        font-family: $primaryFontRegular;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        margin: 0;
+    }
+    p{
+        margin:0;
+        padding:25px 0 40px 0;
+        font-family: $primaryFontRegular;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

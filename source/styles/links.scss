@@ -1,0 +1,57 @@
+.links{
+    background-color: $darkGrey;
+    color:$white;
+    padding: 73px 0 78px;
+    .container {
+        @include flex-row
+    }
+    &__info{
+        flex:2;
+    }
+    &__descr{
+        font-size: 14px;
+        line-height: 22px;
+        font-family: $primaryFontBold;
+        margin-top: 32px;
+        width: 50%;
+    }
+    &__navigation{
+        flex:3;
+        @include flex-row;
+        justify-content: space-between;
+        &_list{
+            &-title{
+                font-size: 10px;
+                line-height: 12px;
+                font-family: $primaryFontBold;
+                text-transform: uppercase;
+            }
+         ul{
+                padding-left: 0;
+                margin-top: 20px;
+                list-style-type: none;
+
+            }
+          li{
+            font-size: 14px;
+            line-height: 22px;
+            color: #CBCFD4;
+            margin:5px 0;
+            &.vk-link::before{
+                content: url(../img/vk.png);
+                padding-right: 5px;
+            }
+            &.fb-link::before{
+                content: url(../img/fb.png);
+                padding-right: 5px;
+            }
+            &.insta-link::before{
+                content: url(../img/inst.png);
+                padding-right: 5px;
+            }
+        }
+
+     }
+    }
+
+}
