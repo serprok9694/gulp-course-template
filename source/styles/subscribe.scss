@@ -4,6 +4,10 @@
   .container {
     @include flex-row;
     justify-content: space-between;
+    @media(max-width: $xl) {
+      @include flex-column;
+      align-items: center;
+    }
   }
   &__title {
     font-size: 30px;
@@ -17,12 +21,22 @@
   }
   &__form {
     @include flex-row;
+    @media(max-width: $xl) {
+      margin-top: 20px;
+    }
+    @media(max-width: $sm) {
+      @include flex-column;
+    }
     input {
       background-color: $cream;
       border: 0;
       margin-right: 35px;
       width: 255px;
       padding-left: 20px;
+      @media(max-width: $sm) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       &::placeholder {
         font-size: 12px;
         line-height: 15px;

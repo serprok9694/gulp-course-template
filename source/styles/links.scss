@@ -4,9 +4,20 @@
   padding: 73px 0 78px;
   .container {
     @include flex-row;
+    @media(max-width: $md) {
+      @include flex-column;
+    }
   }
   &__info {
     flex: 2;
+    @media(max-width: $md) {
+      @include flex-row;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    @media(max-width: $sm) {
+      @include flex-column;
+    }
   }
   &__descr {
     font-size: 14px;
@@ -14,12 +25,24 @@
     font-family: $primaryFontRegular;
     margin-top: 32px;
     width: 50%;
+    @media(max-width: $md) {
+      width: 100%;
+      margin-left: 20px;
+    }
   }
   &__navigation {
     flex: 3;
     @include flex-row;
     justify-content: space-between;
+    @media(max-width: $md) {
+      flex-wrap: wrap;
+      text-align: center;
+    }
     &-list {
+      @media(max-width: $md) {
+        margin-bottom: 15px;
+        width: 50%;
+      }
       &-title {
         font-size: 10px;
         line-height: 12px;

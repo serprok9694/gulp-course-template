@@ -1,7 +1,13 @@
 .collections {
   background: linear-gradient(to right, $cream 50%, $mediumGrey 50%);
+  @media(max-width: $md) {
+    background: linear-gradient(to bottom, $cream 50%, $mediumGrey 50%);
+  }
   .container {
     @include flex-row;
+    @media(max-width: $md) {
+      @include flex-column;
+    }
   }
   &-item {
     flex: 1;
