@@ -1,24 +1,3 @@
-@import './fonts.scss';
-@import './constants.scss';
-@import './mixins.scss';
-@import './carousel.scss';
-@import './button.scss';
-@import './collections.scss';
-@import './catalog.scss';
-@import './navbar.scss';
-@import './models.scss';
-@import './model.scss';
-@import './subscribe.scss';
-@import './links.scss';
-
-.container {
-  width: 75%;
-  margin: 0 auto;
-  @media(max-width: $sm) {
-    width: 90%;
-  }
-}
-
-.home-section {
-  background-color: #F9F6F1;
+h1 {
+  color: red;
 }
