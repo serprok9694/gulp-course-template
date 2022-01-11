@@ -1,0 +1,50 @@
+.navbar {
+    &-dropdowns {
+        @include flex-row;
+        .dropdown button {
+            background-color: transparent;
+            border: none;
+            color: $darkgray;
+            font-family: $primeryFontMedium;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.03em;
+        }
+    }
+    &-points {
+        @include flex-row;
+        &__point {
+            color: $darkgray;
+            font-family: $primeryFontMedium;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.03em;
+            margin-right: 35px;
+        }
+    }
+    &-bag {
+        @include flex-row;
+        align-items: center;
+        &__count {
+            @include flex-row;
+            align-items: center;
+            margin-left: 15px;
+            margin-top: 8px;
+            span {
+                font-family: $primeryFontBold;
+                font-size: 12px;
+                line-height: 15px;
+                color: $white;
+                letter-spacing: 0.03em;
+                background-color: $beige;
+                padding: 0 13px;
+            }
+            &::before {
+                content: "";
+                border-top: 7.5px solid transparent;
+                border-bottom: 7.5px solid transparent;
+                border-right: 12px solid $beige;
+            }
+        }
+    }
+}

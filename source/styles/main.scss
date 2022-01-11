@@ -1,10 +1,8 @@
-$color: blue;
-h1 {
-    color: red;
+@import "./fonts.scss";
+@import "./mixin.scss";
+@import "./consttants.scss";
+@import "./navbar.scss";
+.home-section {
+    background-color: $cream;
+    padding: 50px 0 50px;
 }
-
-p {
-    color: $color;
-}
-
-@import "./button.scss"
