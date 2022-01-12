@@ -2,7 +2,26 @@
 @import "./mixin.scss";
 @import "./consttants.scss";
 @import "./navbar.scss";
+@import "./carousel.scss";
+@import "./delivery.scss";
+@import "./collection.scss";
 .home-section {
     background-color: $cream;
     padding: 50px 0 50px;
+}
+
+button.btn-primary {
+    font-family: $primeryFontRegular;
+    background-color: $beige;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 17px 30px;
+    border: 0;
+    border-radius: 0;
+    transition: .3;
+    &:hover {
+        background-color: #ffc093;
+    }
 }

@@ -1,0 +1,22 @@
+.free-delivery {
+    background-color: $darkgray;
+    text-align: center;
+    color: $white;
+    padding: 80px 0 70px;
+    font-family: $primeryFontRegular;
+    &__title {
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        b {
+            font-family: $primeryFontBold;
+        }
+        &__descr {
+            font-size: 21px;
+            line-height: 26px;
+        }
+    }
+}

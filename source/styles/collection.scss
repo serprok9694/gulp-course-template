@@ -1,0 +1,34 @@
+.collection {
+    background: linear-gradient(to right, $cream 50%, $lightgray 50%);
+    .container {
+        @include flex-row;
+    }
+    &-item {
+        flex: 1;
+        @include flex-column;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: $primeryFontMedium;
+        padding: 60px 0 53px 20px;
+        position: relative;
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 25px 0 40px
+        }
+        .btn-primary {
+            padding: 5px 30px;
+        }
+        &>img {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+        }
+    }
+}
