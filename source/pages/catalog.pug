@@ -1,0 +1,18 @@
+mixin catalogItem (name)
+    .col.catalog-item
+        .catalog-item__title ПЛАТЬЯ
+        img(src="../img/" + name + ".png", alt="shirt")
+
+section.catalog 
+    .container 
+        .row 
+            +catalogItem("grayshirt")
+            +catalogItem("beigeshirt")
+            +catalogItem("grayshirt")
+            +catalogItem("beigeshirt")
+        .row 
+            +catalogItem("beigeshirt")
+            +catalogItem("grayshirt")
+            +catalogItem("beigeshirt")
+            +catalogItem("grayshirt")
+               
