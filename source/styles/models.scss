@@ -1,0 +1,21 @@
+.models {
+    text-align: center;
+    padding: 150px 0;
+    &__title {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $darkgray;
+        font-family: $primeryFontBold;
+    }
+    &__content {
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 103px 0;
+    }
+    .btn-primary {
+        margin-left: 9px;
+    }
+}
