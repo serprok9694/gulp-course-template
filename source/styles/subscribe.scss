@@ -5,6 +5,9 @@
         @include flex-row;
         justify-content: space-between;
         align-items: center;
+        @media(max-width: $md) {
+            @include flex-column;
+        }
     }
     &__title {
         font-size: 30px;
@@ -13,6 +16,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-family: $primeryFontBold;
+        @media(max-width: $md) {
+            font-saze: 22px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
     }
     &__form {
         display: flex;

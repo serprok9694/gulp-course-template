@@ -1,0 +1,29 @@
+mixin navigationList(title, list)
+    .links__navigation-list 
+        h4= title
+        ul 
+            -
+            each item in list
+                li= item
+
+footer
+    .links 
+        .container 
+            .links__info 
+                img(src="../img/logofoot.png" alt="logo")
+                .links__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+            .links__navigation
+                +navigationList("Основные ссылки" ,["О компании", "Каталог", "Доставка", "Оплата"])
+                +navigationList("Категории" ,["Мужская одежда", "Женская одежда", "Детская одежда", "Для животных"])
+                +navigationList("Категории" ,["Таблица размеров", "Блог о моде", "Наша миссия"])
+                .links__navigation-list
+                    h4 СОЦ СЕТИ
+                    ul  
+                        li.vk VK.com
+                        li.fb Facebook
+                        li.inst Instagram
+
+    .footer__info
+        .container 
+            .footer__copyright Copyright © 2019. Все права защищены
+            .footer__private-policy Политика приватности

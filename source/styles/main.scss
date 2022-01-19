@@ -9,6 +9,7 @@
 @import "./models.scss";
 @import "./model.scss";
 @import "./subscribe.scss";
+@import "./footer.scss";
 .home-section {
     background-color: $cream;
     padding: 50px 0 50px;
@@ -29,3 +30,8 @@ button.btn-primary {
         background-color: #ffc093;
     }
 }
+
+// .container {
+//     width: calc(100% - 300px) !important;
+//     margin: auto !important;
+// }

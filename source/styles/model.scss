@@ -1,5 +1,8 @@
 .model {
     position: relative;
+    @media(max-width: $lg) {
+        margin-bottom: 15px;
+    }
     &__title {
         font-family: $primeryFontBold;
         font-size: 14px;

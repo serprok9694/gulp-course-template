@@ -1,7 +1,13 @@
 .collection {
     background: linear-gradient(to right, $cream 50%, $lightgray 50%);
+    @media(max-width: $md) {
+        background: linear-gradient(to bottom, $cream 50%, $lightgray 50%);
+    }
     .container {
         @include flex-row;
+        @media(max-width: $md) {
+            @include flex-column;
+        }
     }
     &-item {
         flex: 1;
@@ -16,6 +22,11 @@
             line-height: 29px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+            @media(max-width: $md) {
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: none;
+            }
         }
         &__descr {
             font-size: 16px;
@@ -29,6 +40,13 @@
             position: absolute;
             bottom: 0;
             right: 15px;
+            @media(max-width: $sm) {
+                transform: scale(0.75);
+                -webkit-transform: scale(0.75);
+                -moz-transform: scale(0.75);
+                -ms-transform: scale(0.75);
+                -o-transform: scale(0.75);
+            }
         }
     }
 }
